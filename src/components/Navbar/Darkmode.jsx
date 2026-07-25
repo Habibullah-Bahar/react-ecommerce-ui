@@ -17,7 +17,7 @@ const Darkmode = () => {
       localStorage.setItem("theme", "light");
     }
   }, [theme]);
-
+ 
   return (
     <div className="relative">
       <img

@@ -65,7 +65,7 @@ const Navbar = ({handleOrderPopup}) => {
           <div 
           data-aos="zoom-in"
           className="flex justify-between items-center gap-4">
-            <div className="group relative  sm:block">
+            <div className="group relative sm:block">
               <input
                 type="text"
                 placeholder="search"
@@ -78,7 +78,7 @@ const Navbar = ({handleOrderPopup}) => {
               onClick={() => handleOrderPopup()}
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 cursor-pointer group shadow-sm"
             >
-              <span className="group-hover:block hidden transition-all duration-200">
+              <span className=" group-hover:block transition-all duration-200">
                 Order
               </span>
               <LuShoppingCart className="text-white text-xl drop-shadow-sm cursor-pointer" />
@@ -117,7 +117,7 @@ const Navbar = ({handleOrderPopup}) => {
                 <FaCaretDown className="transition-all duration-400 group-hover:rotate-180" />
               </span>
             </a>
-            <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-m dark:bg-gray-800 dark:text-white d">
+            <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-m dark:bg-gray-800 dark:text-white">
               <ul>
                 {DropdownLinks.map((data) => (
                   <li key={data.id}>
