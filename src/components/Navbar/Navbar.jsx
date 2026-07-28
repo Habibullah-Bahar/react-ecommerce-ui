@@ -5,7 +5,7 @@ import { LuShoppingCart } from "react-icons/lu";
 import Darkmode from "./Darkmode";
 import { FaCaretDown } from "react-icons/fa";
 
-const Navbar = ({handleOrderPopup}) => {
+const Navbar = ({ handleOrderPopup }) => {
   const Menu = [
     {
       id: 1,
@@ -62,14 +62,15 @@ const Navbar = ({handleOrderPopup}) => {
             </a>
           </div>
           {/* searchbar*/}
-          <div 
-          data-aos="zoom-in"
-          className="flex justify-between items-center gap-4">
+          <div
+            data-aos="zoom-in"
+            className="flex justify-between items-center gap-4"
+          >
             <div className="group relative sm:block">
               <input
                 type="text"
                 placeholder="search"
-                className="w-[100px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 px-2 py-1 rounded-full border border-gray-300 focus:outline-none focus:border-1 focus:border-primary bg-white text-black shadow-md "
+                className="w-[80px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 px-2 py-1 rounded-full border border-gray-300 focus:outline-none focus:border-1 focus:border-primary bg-white text-black shadow-md "
               />
               <IoSearchSharp className="text-gray-400 group-hover:text-primary absolute top-1/2 right-3 -translate-y-1/2" />
             </div>
@@ -108,10 +109,7 @@ const Navbar = ({handleOrderPopup}) => {
           ))}
           {/* otherbtn */}
           <li className="group relative cursor-pointer">
-            <a
-              href="#"
-              className="flex items-center gap-[2px] py-2 "
-            >
+            <a href="#" className="flex items-center gap-[2px] py-2 ">
               Trending Products
               <span>
                 <FaCaretDown className="transition-all duration-400 group-hover:rotate-180" />
@@ -121,9 +119,12 @@ const Navbar = ({handleOrderPopup}) => {
               <ul>
                 {DropdownLinks.map((data) => (
                   <li key={data.id}>
-                    <a href={data.link}
-                    className="inline-block w-full rounded-md p-2 hover:bg-primary/40"
-                    >{data.name}</a>
+                    <a
+                      href={data.link}
+                      className="inline-block w-full rounded-md p-2 hover:bg-primary/40"
+                    >
+                      {data.name}
+                    </a>
                   </li>
                 ))}
               </ul>

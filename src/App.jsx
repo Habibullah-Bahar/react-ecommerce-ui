@@ -16,11 +16,12 @@ function App() {
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   };
-  useEffect(() => {
+
+  useEffect(() => { 
     AOS.init({
       duration: 800,
       once: true,
-    }); 
+    });
   }, []);
 
   return (
@@ -40,7 +41,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
