@@ -70,7 +70,7 @@ const Navbar = ({ handleOrderPopup }) => {
               <input
                 type="text"
                 placeholder="search"
-                className="w-[80px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 px-2 py-1 rounded-full border border-gray-300 focus:outline-none focus:border-1 focus:border-primary bg-white text-black shadow-md "
+                className="placeholder:opacity-0 sm:placeholder:opacity-100 w-[40px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 px-2 py-1 rounded-full border border-gray-300 focus:outline-none focus:border-1 focus:border-primary bg-white text-black shadow-md "
               />
               <IoSearchSharp className="text-gray-400 group-hover:text-primary absolute top-1/2 right-3 -translate-y-1/2" />
             </div>
